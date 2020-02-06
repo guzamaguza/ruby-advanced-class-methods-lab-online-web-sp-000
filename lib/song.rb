@@ -66,7 +66,7 @@ class Song
     return @song
   end
 
-  def create_from_filename(input)
+  def self.create_from_filename(input)
     #"Taylor Swift - Blank Space.mp3"
     name_split = input.split(" - ")[1].chomp(".mp3")
     artist_split = input.split(" - ")[0]
